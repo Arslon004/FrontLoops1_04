@@ -1,0 +1,108 @@
+html{box-sizing: border-box;}
+*,*::before,*::after{
+  box-sizing: inherit;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #cfdde8, #748fa5);
+  background-repeat: no-repeat;
+}
+.wrapper{
+  width: 400px;
+  margin: 100px auto 0;
+}
+.cf::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+header{
+position: relative;
+  display: flex;
+  align-items: center;
+  background-color: cornflowerblue;
+  padding: 15px;
+  color: #fff;
+}
+header .card_title{
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  padding: 10px 0 10px 30px;
+  margin: 0;
+}
+.card_title::before{
+  position: absolute;
+  display: block;
+  content: '';
+  clear: both;
+  width: 10px;height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 50%;left: 10px;
+  transform: translateY(-50%);
+}
+.link{
+  display: inline-block;
+  position: absolute;
+  top: 50%;right: 30px;
+  transform: translateY(-50%);
+}
+.card_body{
+  padding: 20px;
+  background-color: #fff;
+}
+hr{
+  margin: 0;
+}
+.message{
+  margin-bottom: 15px;
+}
+.message_text{
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 600;
+  max-width: 270px;
+  border-radius: 5px;
+  width: auto;
+}
+.message_time{
+  color: #acacac;
+  margin-bottom: 5px;
+}
+.message_sender .message_text{
+  background-color: #e6edf6;
+}
+.message_accept .message_text{
+  float: right;
+  background-color: #f2f2f2;
+}
+.message_accept .message_time{
+  text-align: right;
+}
+.compain_message .message_text{
+  background-color: #ffc2c1;
+  float: right;
+}
+input{
+  border: none;
+  margin-top: 10px;
+}
+form .input{
+  padding: 8px;
+  outline: none;
+}
+button{
+  margin-top: 10px;
+  background-color: #fff;
+  border: none;
+}
+.button{
+float: right;
+padding: 8px;
+}
